@@ -2,10 +2,10 @@
 echo "This file is opened $(date)"
 echo "Welcome to my project sir,what's my repository?"
 read -p "Write the prefered repository: "  repos
-cd /home/$USERNAME/$repos
+echo $repos
 
-read -p "Please enter your filtering features:" fil1 fil2
-locate $repos/$fil1 | grep -i $fil2
+#"Please enter your filtering features:" 
+grep -il $2 $repos/$1
 
 
 
